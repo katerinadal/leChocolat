@@ -84,6 +84,7 @@
                         </div>
                     </form>
                 </div>
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
                     </button>
@@ -109,13 +110,16 @@
                 <div class="col col-sm-3">
                     <img src="images/logo.png" class="img-fluid">
                 </div>
-                <div class="col col-sm-3">
-                    <a class="btn btn-sm btn-warning" data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+ 987 6543 2100</strong>"
-                        data-placement="bottom" href="#bskt">Reserve your baskets</a>
-                </div>
 
+
+                <div class="col col-sm-3">
+                    <a data-toggle="modal" data-target="#basketModal" class="btn btn-sm btn-warning">
+                        <p class="modal-title">Reserve your baskets </p>
+
+                    </a>
+
+                </div>
             </div>
-        </div>
     </header>
 
     <!-- MAIN CONTENT -->
@@ -244,11 +248,14 @@
             </div>
         </div>
         <!--4th row-->
-        <div class="row justify-content-center">
-            <div class="col col-sm-8 col-12 ">
-                <div class="card mb-3">
-                    <div class="card-header bg-warning">Reserve your baskets</div>
-                    <div class="card-body">
+        <div id="basketModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header"> Reserve your baskets
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
                         <form id="bskt" action="">
                             <div class="form-group row">
                                 <div class="col-sm-3">
@@ -306,17 +313,38 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <input type="submit" class="btn btn-primary" value="Reserve">
+                                <p class="col-sm-3">Home Delivery</p>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <div  class="form-check form-check-inline btn btn-success">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                            value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline btn btn-danger">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                            value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                    </div>
+                                </div>
                             </div>
+
                         </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
+                        </button>
+                        <button type="submit" class="btn btn-primary btn-sm">
+                            Submit
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
-
+    </div>
+    </div>
+    </div>
+    </div>
 
     <!-- FOOTER -->
     <footer class="footer">
