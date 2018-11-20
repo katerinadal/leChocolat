@@ -36,7 +36,7 @@ body{
     background-color:#6E3F19
 }
 tr:hover {
-    background-color:#dbb08db0!important
+    background-color:#dbb08d!important
 }
 .tab-content {
     border-left: 1px solid #ddd;
@@ -45,7 +45,7 @@ tr:hover {
     padding: 10px;
   }
   .carousel {
-    background:#914d15b0
+    background:#914d15;
 }
 .carousel-item {
   height: 300px;
